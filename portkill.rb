@@ -5,23 +5,16 @@ require 'optparse'
 #raise ENV["USER"].inspect
 #raise ENV["_"].inspect
 
-
-##############################################
-# portkill.rb 09/05/01
-# Usage: portkill.rb -p PORT
-# (Only root can run this program.)
-#############################################
-
-
-
-unless ENV["USER"] == "root"
-	puts "root required.(please su or sudo!)"
-	exit(-1)
-end
+#unless ENV["USER"] == "root"
+#	puts "root required.(please su or sudo!)"
+#	exit(-1)
+#end
 
 port = 0
+is_force_kill = false
 ARGV.options do |opt|
 	opt.on('-p PORT', 'port number.'){ |v| port = v.to_i }
+	opt.on('-k', 'port number.'){ is_force_kill = true }
 	opt.parse!
 end
 
@@ -63,9 +56,10 @@ puts "find #{finds.size} count processes."
 puts first_line
 finds.each{ |k| puts "[find] #{k[:description]}"}
 
-finds.each do |f|
-	puts "#{f[:pid]} is killing now.."
-	%x(kill #{f[:pid]})
+finds.map{ |f| f[:pid] }.uniq.each do |pid|
+  puts "#{pid} is killing now.."
+  puts "kill #{ is_force_kill ? "-KILL " : ""}#{pid}"
+  %x(kill #{ is_force_kill ? "-KILL " : ""}#{pid})
 end
 
 puts "done."
