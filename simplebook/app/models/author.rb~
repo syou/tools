@@ -1,0 +1,5 @@
+class Author < ActiveRecord::Base
+  has_many :author_books, :foreign_key => "author_id", :class_name => "Book"
+  has_many :authorship_books, :forieign_key => "authorship_id", :class_name => "Book"
+
+end

@@ -1,0 +1,25 @@
+<p>アマゾン検索</p>
+
+<% form_tag() do -%>
+   <p>ISBNで検索(キーワード検索は無視されます。）  <%= text_field_tag :isbn %></p>
+   <p>キーワードで検索 <%= text_field_tag :keyword %></p>
+   <p>ソート指定: <%= select_tag :sort, options_for_select(AmazonEc2::SORT_TYPES, params[:sort]) %>
+   <p><%= submit_tag "検索" %></p>
+<% end -%>
+
+<% unless @amazon_ec2.blank? -%>
+   <table>
+   <tr>
+     <td>ISBN(ASIN)</td>
+     <td>タイトル</td>
+   </tr>
+      <% @amazon_ec2.search_items.each do |item| -%>
+        <tr>	
+	  <td><%= item.asin %></td>		     
+          <td>
+             <%= item.title %>
+          </td>
+	</tr>
+      <% end -%>
+   </table>	
+<% end -%>

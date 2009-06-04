@@ -1,0 +1,211 @@
+<script type="text/javascript">
+  <!-- ajaxで挿入したcountを数えておく。 -->
+  volume_count = <%= @book.volumes.size %>;
+  function check_series(){
+    if($('series_kansu').checked){
+      Element.show("constructed_by_kansu");
+      Element.hide("constructed_by_subtitle");
+    }
+    else{
+      Element.hide("constructed_by_kansu");
+      Element.show("constructed_by_subtitle");      
+    }
+  }
+</script>
+<% form_for :book_index do |f| -%>
+<p>新規登録</p>
+■ジャンル(必須)<br />
+<% BookIndex::GENRES.each do |genre| -%>
+<label><%= f.radio_button :genre, genre.id %><%= genre.jname %></label>
+<% end -%>
+<p>■インデックス<br />
+いわゆる整理用。名前をつけておくとあとからの検索に役立ちます。ふりがなは自動で入力されます。
+</p>
+<table class="example1">
+  <tr>
+    <td>著者又はシリーズ物</td>
+    <td>ふりがな</td>      
+  </tr>
+  <tr>
+    <td>
+      <%= f.text_field :name, :class => "example2" %>
+    </td>
+    <td><%= f.text_field :character, :class => "example2" %></td>
+  </tr>
+</table>
+<div class="example2">
+<p>■内容の詳細</p>
+<p>□原作者(任意)<br />
+  <%= text_field_tag :"books[authorship]", params[:books][:authorship], :class => "example2" %></p>
+<p>
+  □タイトル又はシリーズ物<br />
+  <%= text_field_tag :"books[title]", params[:books][:title], :class => "example2" %><br />
+  □出版社<br />
+  <%= text_field_tag :"books[publisher]", params[:books][:publisher], :class => "example2" %>
+</p>
+<p>
+■本の巻数、サブタイトルについて<br />
+<label><%= radio_button_tag :series_type, true, false, :onclick => "check_series();", :id => "series_kansu" %>巻数で構成<label>
+<label><%= radio_button_tag :series_type, true, false, :onclick => "check_series();", :id => "series_subtitle" %>サブタイトルまたは異なる著者がいる<label>
+</p>
+
+<div id="constructed_by_subtitle">
+  <table class="example2" id="volume_table">
+    <tr>
+      <td>サブタイトル</td>
+      <td>著者が異なる場合は著者名(任意)</td>
+      <td>巻数(任意)</td>
+    </tr>
+    <% @book.volumes.each_with_index do |volume, i| -%>
+    <tr>
+      <td><%= text_field_tag :"volumes[#{i}][subtitle]", volume.subtitle, :class => "example2" %></td>
+      <td><%= text_field_tag :"volumes[#{i}][author_name]", volume.author_name, :class => "example2" %></td>
+      <td><%= text_field_tag :"volumes[#{i}][no]", volume.no, :class => "example2" %></td>      
+    </tr>
+    <% end -%>
+  </table>
+
+  </p>
+  <p>
+    <%= button_to_remote "テキストボックス追加", 
+	{ :update => "volume_table", :url => { :action => "insert_volume" }, :with => "'count=' + ++volume_count", :position => "bottom" },
+    :class => "example3" %>
+  </p>
+</div>
+<div id="constructed_by_kansu">
+  <p>
+    巻数<%= text_field_tag :kannsuu %><br />
+    例) 1-10でハイフンで入力。 2,3,4で区切って入力。1,2,4-5で組み合わせて入力。
+  </p>
+</div>
+
+</div>
+<p>
+■　完結したかどうか。<br />
+<input type="checkbox" name="hoge3" id="hoge3" />完結  （任意）
+</p>
+
+<p><%= submit_tag "これでおk", :class => "example3" %>
+<%= button_to_function "まだ入力する", "alert('これは　なんですか？吉田。 What is this? Yoshida.');", :class => "example3" %></p>
+
+<% end -%>
+
+
+<hr />
+<br />
+<p>以下は原案。</p>
+
+<form id="form1" name="form1" method="post" action="">
+  新しくとーろく<br />
+
+  <br />
+  
+  ■ジャンル<br />
+  <input type="radio" name="kind" id="kind1" />
+  <label for="kind1">ラノベ</label>
+  <input type="radio" name="kind" id="kind2" />
+  <label for="kind2">ノベル</label>
+  <input type="radio" name="kind" id="kind3" />
+
+  <label for="kind3">漫画</label>
+
+  <br />
+  <br />
+  
+  <table class="example1">
+    <tr>
+      <td>著者又はシリーズ物</td>
+      <td>ふりがな（任意）</td>      
+    </tr>
+    <tr>
+      <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+      <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+    </tr>
+  </table>
+  <input type="radio" name="series" id="series1" />
+  <label for="series1">シリーズの場合はチェック</label>
+
+  
+  <br />
+  <br />
+  
+  <div class="example1">
+  ↑をチェックした場合表示<br />
+  <table>
+  <tr>
+  <td>原作者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  </table>
+
+
+
+
+  <input class="example3" type="submit" value="テキストボックス追加" name="hoge2" id="hoge2" /><br />
+  </div>
+    
+  <br />
+  <br />
+  
+  <input type="radio" name="series" id="series2" />
+
+    <label for="series2">シリーズの場合はチェック</label><br />
+  □タイトル又はシリーズ物<br />
+  <input class="example2" type="text" name="hoge1" id="hoge1" /><br />
+  ■出版社<br />
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+  
+  <br />
+  <br />
+
+  
+  <div class="example1">
+  ↑をチェックした場合表示<br />
+  サブタイトル<input class="example2" type="text" name="hoge2" id="hoge2" /><br />
+  サブタイトル<input class="example2" type="text" name="hoge2" id="hoge2" /><br />
+  <input class="example3" type="submit" value="テキストボックス追加" name="hoge2" id="hoge2" /><br />
+  </div>
+  
+  <br />
+
+  <br />
+  
+  ■巻数
+  <input class="example2" type="text" name="hoge1" id="hoge1" class="example1" /><br />
+  <br />
+  
+  <input type="checkbox" name="hoge3" id="hoge3" />
+  完結  （任意）
+  
+  <br />
+  <br />
+
+  <input class="example3" type="submit" value="これでおｋ" name="hoge2" id="hoge2" />
+
+  <input class="example3" type="submit" value="まだ入力する？" name="hoge2" id="hoge2" /><br />
+
+</form>
+
+<script type="text/javascript">
+//initialize
+check_series();
+</script>

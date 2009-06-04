@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  author_id: 1
+  authership_id: 1
+  volume: 1
+  publisher_id: 1
+  book_index_id: 1
+
+two:
+  title: MyString
+  author_id: 1
+  authership_id: 1
+  volume: 1
+  publisher_id: 1
+  book_index_id: 1

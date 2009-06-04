@@ -1,0 +1,174 @@
+<% form_for :book_index do |f| -%>
+<p>新規登録<br/>
+  ■ジャンル(必須)<br />
+  <% BookIndex::GENRES.each do |genre| -%>
+  <label><%= f.radio_button :genre, genre.id %><%= genre.jname %></label>
+  <% end -%>
+  <table class="example1">
+    <tr>
+      <td>著者又はシリーズ物(いわゆる整理用)</td>
+      <td>ふりがな（必須）</td>      
+    </tr>
+    <tr>
+      <td>
+	<%= f.text_field :name %>
+      </td>
+      <td><%= f.text_field :character %></td>
+    </tr>
+  </table>
+<p>内容詳細の登録</p>
+<p>原作者(任意)<br />
+  <%= text_field_tag :"books[authorship]" %></p>
+<p>
+  □タイトル又はシリーズ物<br />
+  <%= text_field_tag :"books[title]" %><br />
+  ■出版社<br />
+  <%= text_field_tag :"books[publisher]" %>
+
+<p>
+<label><%= radio_button_tag :series_type, true %>巻数のみ<label>
+<label><%= radio_button_tag :series_type, true %>著者が異なるサブタイトル</label>
+<label><%= radio_button_tag :series_type, true %>著者が同じサブタイトル<label>
+</p>
+
+
+<div id="common_author">
+  <table>
+    <tr>
+      <td>原作者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  </table>
+</div>
+<div id="another_author">
+
+</div>
+<% end -%>
+<form id="form1" name="form1" method="post" action="">
+  新しくとーろく<br />
+
+  <br />
+  
+  ■ジャンル<br />
+  <input type="radio" name="kind" id="kind1" />
+  <label for="kind1">ラノベ</label>
+  <input type="radio" name="kind" id="kind2" />
+  <label for="kind2">ノベル</label>
+  <input type="radio" name="kind" id="kind3" />
+
+  <label for="kind3">漫画</label>
+
+  <br />
+  <br />
+  
+  <table class="example1">
+    <tr>
+      <td>著者又はシリーズ物</td>
+      <td>ふりがな（任意）</td>      
+    </tr>
+    <tr>
+      <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+      <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+    </tr>
+  </table>
+  <input type="radio" name="series" id="series1" />
+  <label for="series1">シリーズの場合はチェック</label>
+
+  
+  <br />
+  <br />
+  
+  <div class="example1">
+  ↑をチェックした場合表示<br />
+  <table>
+  <tr>
+  <td>原作者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  </table>
+
+
+
+
+  <input class="example3" type="submit" value="テキストボックス追加" name="hoge2" id="hoge2" /><br />
+  </div>
+    
+  <br />
+  <br />
+  
+  <input type="radio" name="series" id="series2" />
+
+    <label for="series2">シリーズの場合はチェック</label><br />
+  □タイトル又はシリーズ物<br />
+  <input class="example2" type="text" name="hoge1" id="hoge1" /><br />
+  ■出版社<br />
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+  
+  <br />
+  <br />
+
+  
+  <div class="example1">
+  ↑をチェックした場合表示<br />
+  サブタイトル<input class="example2" type="text" name="hoge2" id="hoge2" /><br />
+  サブタイトル<input class="example2" type="text" name="hoge2" id="hoge2" /><br />
+  <input class="example3" type="submit" value="テキストボックス追加" name="hoge2" id="hoge2" /><br />
+  </div>
+  
+  <br />
+
+  <br />
+  
+  ■巻数
+  <input class="example2" type="text" name="hoge1" id="hoge1" class="example1" /><br />
+  <br />
+  
+  <input type="checkbox" name="hoge3" id="hoge3" />
+  完結  （任意）
+  
+  <br />
+  <br />
+
+  <input class="example3" type="submit" value="これでおｋ" name="hoge2" id="hoge2" />
+
+  <input class="example3" type="submit" value="まだ入力する？" name="hoge2" id="hoge2" /><br />
+
+</form>

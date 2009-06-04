@@ -1,0 +1,9 @@
+class BookIndex < ActiveRecord::Base
+  has_many :books
+  #english_name, genre_id, jname
+  GENRES = %w(
+light_novels 1        
+
+novels 2
+comic 3)
+end

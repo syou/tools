@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>無題ドキュメント</title>
+<style type="text/css">
+body {background-color:#FFFFFF;}
+input.example1 { width: 50px; }
+input.example2 {border: 2px #333366 solid ;}
+input.example3 {border: 2px #333366 solid ;
+				background-color: #C3CDF3;}
+div.example1 { padding-left: 20px; }
+table.example1 { padding: 0px;
+		   margin: 0px;}
+tr.example1 { visibility: collapse;}
+td {text-align: center;
+    vertical-align: bottom;}
+</style>
+</head>
+<body>
+  <%= yield:layout %>
+</body>
+
+</html>

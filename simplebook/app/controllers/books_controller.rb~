@@ -1,0 +1,8 @@
+class BooksController < ApplicationController
+  layout "book"
+
+  def new
+    @book = Book.new
+  end
+
+end

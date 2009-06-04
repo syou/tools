@@ -1,0 +1,2187 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-21 04:03:37) [GET]
+
+ActionController::RoutingError (No route matches "/rails" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&AWsAccessKeyId=04KWCPFABBS5S27AKFG2&SearchIndex=Book&Keywords=%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3&ResponseGroup=Medium&Sort=salesrank
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&AWsAccessKeyId=04KWCPFABBS5S27AKFG2&SearchIndex=Book&Keywords=Ruby&ResponseGroup=Medium
+
+***** Debugger requested, but was not available: Start server with --debugger to enable *****
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Book&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&ItemId=4797336625&Operation=ItemLookup&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:43:40) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:44:17) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:44:28) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: ):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:49:08) [GET]
+Rendering search/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:53:27) [GET]
+Rendering search/index
+
+ActionView::TemplateError (undefined method `SORT_TYPE' for AmazonEc2:Class) on line #6 of app/views/search/index.rhtml:
+3: <% form_tag() do -%>
+4:    <p>ISBNで検索  <%= text_field_tag :isbn %></p>
+5:    <p>キーワードで検索 <%= text_field_tag :keyword %></p>
+6:    <p>ソート指定: <%= select_tag :sort, options_for_select(AmazonEc2.SORT_TYPE, params[:sort]) %>
+7: 
+8: <% end -%>
+
+    app/views/search/index.rhtml:6:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:3:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.9ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:55:02) [GET]
+Rendering search/index
+Completed in 56ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 20:59:35) [GET]
+Rendering search/index
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:01:49) [GET]
+Rendering search/index
+Completed in 26ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:02:11) [GET]
+Rendering search/index
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:13:51) [GET]
+Rendering search/index
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:16:18) [GET]
+Rendering search/index
+Completed in 29ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:16:25) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+NameError (uninitialized constant AmazonEc2::SORT_TYPE):
+  lib/amazon_ec2.rb:46:in `initialize'
+  app/controllers/search_controller.rb:4:in `new'
+  app/controllers/search_controller.rb:4:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:17:29) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+
+ActionView::TemplateError (undefined method `title' for "keyword":String) on line #15 of app/views/search/index.rhtml:
+12:       <% @amazon_ec2.search_items.each do |item| -%>
+13:         <tr>			     
+14:           <td>
+15:              <%= item.title %>
+16:           </td>
+17: 	</tr>
+18:       <% end -%>
+
+    app/views/search/index.rhtml:15:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:12:in `each'
+    app/views/search/index.rhtml:12:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (188.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:18:06) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+
+ActionView::TemplateError (undefined method `title' for "keyword":String) on line #15 of app/views/search/index.rhtml:
+12:       <% @amazon_ec2.search_items.each do |item| -%>
+13:         <tr>			     
+14:           <td>
+15:              <%= item.title %>
+16:           </td>
+17: 	</tr>
+18:       <% end -%>
+
+    app/views/search/index.rhtml:15:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:12:in `each'
+    app/views/search/index.rhtml:12:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.1ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:18:32) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+
+ActionView::TemplateError (undefined method `title' for "keyword":String) on line #15 of app/views/search/index.rhtml:
+12:       <% @amazon_ec2.search_items.each do |item| -%>
+13:         <tr>			     
+14:           <td>
+15:              <%= item.title %>
+16:           </td>
+17: 	</tr>
+18:       <% end -%>
+
+    app/views/search/index.rhtml:15:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:12:in `each'
+    app/views/search/index.rhtml:12:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:20:31) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+
+ActionView::TemplateError (undefined method `title' for "keyword":String) on line #15 of app/views/search/index.rhtml:
+12:       <% @amazon_ec2.search_items.each do |item| -%>
+13:         <tr>			     
+14:           <td>
+15:              <%= item.title %>
+16:           </td>
+17: 	</tr>
+18:       <% end -%>
+
+    app/views/search/index.rhtml:15:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:12:in `each'
+    app/views/search/index.rhtml:12:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (6.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:20:56) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+RuntimeError (#<AmazonEc2:0xb69a2fe8 @search_type=:keyword, @keyword="Ruby">):
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (143.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:21:04) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+RuntimeError (["keyword", "isbn"]):
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:21:31) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+RuntimeError (["keyword", "isbn"]):
+  lib/amazon_ec2.rb:51:in `search_items'
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:21:53) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+TypeError (exception class/object expected):
+  lib/amazon_ec2.rb:51:in `raise'
+  lib/amazon_ec2.rb:51:in `search_items'
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.6ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:21:57) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+RuntimeError (:keyword):
+  lib/amazon_ec2.rb:51:in `search_items'
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (308.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:22:04) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+RuntimeError ():
+  lib/amazon_ec2.rb:53:in `search_items'
+  lib/amazon_ec2.rb:51:in `each'
+  lib/amazon_ec2.rb:51:in `search_items'
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (151.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:22:08) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+
+RuntimeError ([#<Amazon::Element:0xb6936640 @element={elem <item> {elem <asin> "4873113946" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E-Ruby-%E3%81%BE%E3%81%A4%E3%82%82%E3%81%A8-%E3%82%86%E3%81%8D%E3%81%B2%E3%82%8D/dp/4873113946%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4873113946" </DetailPageURL>} {elem <salesrank> "44144" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "59" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "125" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "391" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "23" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "59" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "125" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41CGDEMgyoL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "391" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "\343\201\276\343\201\244\343\202\202\343\201\250 \343\202\206\343\201\215\343\201\262\343\202\215" </Author>} {elem <author> "David Flanagan" </Author>} {elem <binding> "\345\244\247\345\236\213\346\234\254" </Binding>} {elem <creator Role="監修"> "\345\215\234\351\203\250 \346\230\214\345\271\263 (\347\233\243\350\250\263)" </Creator>} {elem <creator Role="翻訳"> "\351\225\267\345\260\276 \351\253\230\345\274\230" </Creator>} {elem <ean> "9784873113944" </EAN>} {elem <isbn> "4873113946" </ISBN>} {elem <label> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Label>} {elem <languages> {elem <language> {elem <name> "\346\227\245\346\234\254\350\252\236" </Name>} {elem <type> "Unknown" </Type>} </Language>} </Languages>} {elem <listprice> {elem <amount> "3990" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,990" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Manufacturer>} {elem <numberofpages> "472" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "110" </Height>} {elem <length Units="hundredths-inches"> "1701" </Length>} {elem <weight Units="hundredths-pounds"> "172" </Weight>} {elem <width Units="hundredths-inches"> "717" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2009-01-26" </PublicationDate>} {elem <publisher> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Publisher>} {elem <studio> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Studio>} {elem <title> "\343\203\227\343\203\255\343\202\260\343\203\251\343\203\237\343\203\263\343\202\260\350\250\200\350\252\236 Ruby" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "3990" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,990" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "3000" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,000" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "1" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb693662c @element={elem <item> {elem <asin> "4797336617" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84Ruby-%E7%AC%AC2%E7%89%88-Ruby%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E6%B0%97%E8%BB%BD%E3%81%AA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E9%AB%98%E6%A9%8B-%E5%BE%81%E7%BE%A9/dp/4797336617%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4797336617" </DetailPageURL>} {elem <salesrank> "6608" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "113" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "353" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "21" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "113" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41Itp4C3tJL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "353" </Width>} </LargeImage>} </ImageSet>} {elem <imageset Category="variant"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/51dP0We2xSL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "21" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/51dP0We2xSL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "54" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/51dP0We2xSL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "115" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/51dP0We2xSL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "358" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "\351\253\230\346\251\213 \345\276\201\347\276\251" </Author>} {elem <author> "\345\276\214\350\227\244 \350\243\225\350\224\265" </Author>} {elem <binding> "\345\215\230\350\241\214\346\234\254" </Binding>} {elem <ean> "9784797336610" </EAN>} {elem <edition> "\347\254\2542\347\211\210" </Edition>} {elem <isbn> "4797336617" </ISBN>} {elem <label> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257\343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Label>} {elem <listprice> {elem <amount> "2730" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,730" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257\343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Manufacturer>} {elem <numberofpages> "489" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "118" </Height>} {elem <length Units="hundredths-inches"> "827" </Length>} {elem <weight Units="hundredths-pounds"> "159" </Weight>} {elem <width Units="hundredths-inches"> "591" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2006-08-05" </PublicationDate>} {elem <publisher> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257\343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Publisher>} {elem <studio> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257\343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Studio>} {elem <title> "\343\201\237\343\201\256\343\201\227\343\201\204Ruby \347\254\2542\347\211\210 Ruby\343\201\247\343\201\257\343\201\230\343\202\201\343\202\213\346\260\227\350\273\275\343\201\252\343\203\227\343\203\255\343\202\260\343\203\251\343\203\237\343\203\263\343\202\260" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2730" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,730" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "1570" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 1,570" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "7" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb6936618 @element={elem <item> {elem <asin> "4873113679" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/%E5%88%9D%E3%82%81%E3%81%A6%E3%81%AERuby-Yugui/dp/4873113679%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4873113679" </DetailPageURL>} {elem <salesrank> "17106" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "59" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "125" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL.jpg" </URL>} {elem <height Units="pixels"> "384" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "23" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "59" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "125" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41gCZhFayuL.jpg" </URL>} {elem <height Units="pixels"> "384" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "Yugui" </Author>} {elem <binding> "\345\244\247\345\236\213\346\234\254" </Binding>} {elem <ean> "9784873113678" </EAN>} {elem <isbn> "4873113679" </ISBN>} {elem <label> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Label>} {elem <languages> {elem <language> {elem <name> "\346\227\245\346\234\254\350\252\236" </Name>} {elem <type> "Unknown" </Type>} </Language>} </Languages>} {elem <listprice> {elem <amount> "2310" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,310" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Manufacturer>} {elem <numberofpages> "224" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "63" </Height>} {elem <length Units="hundredths-inches"> "945" </Length>} {elem <weight Units="hundredths-pounds"> "93" </Weight>} {elem <width Units="hundredths-inches"> "732" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2008-06-26" </PublicationDate>} {elem <publisher> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Publisher>} {elem <studio> "\343\202\252\343\203\251\343\202\244\343\203\252\343\203\274\343\202\270\343\203\243\343\203\221\343\203\263" </Studio>} {elem <title> "\345\210\235\343\202\201\343\201\246\343\201\256Ruby" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2310" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,310" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "2981" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,981" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "2" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb6936604 @element={elem <item> {elem <asin> "4894712857" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/Ruby%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%BB%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3-Russ-Olsen/dp/4894712857%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4894712857" </DetailPageURL>} {elem <salesrank> "4813" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "60" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "127" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL.jpg" </URL>} {elem <height Units="pixels"> "377" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "24" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "60" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "127" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41PNvUxHtgL.jpg" </URL>} {elem <height Units="pixels"> "377" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "Russ Olsen" </Author>} {elem <author> "\343\203\251\343\202\271\343\203\273\343\202\252\343\203\253\343\202\273\343\203\263" </Author>} {elem <binding> "\345\215\230\350\241\214\346\234\254\357\274\210\343\202\275\343\203\225\343\203\210\343\202\253\343\203\220\343\203\274\357\274\211" </Binding>} {elem <creator Role="翻訳"> "\345\260\217\346\236\227 \345\201\245\344\270\200" </Creator>} {elem <creator Role="翻訳"> "\350\217\205\351\207\216 \350\243\225" </Creator>} {elem <creator Role="翻訳"> "\345\220\211\351\207\216 \351\233\205\344\272\272" </Creator>} {elem <creator Role="翻訳"> "\345\261\261\345\262\270 \345\244\242\344\272\272" </Creator>} {elem <creator Role="翻訳"> "\345\260\217\345\263\266 \345\212\252" </Creator>} {elem <ean> "9784894712850" </EAN>} {elem <isbn> "4894712857" </ISBN>} {elem <label> "\343\203\224\343\202\242\343\202\275\343\203\263\343\202\250\343\203\207\343\203\245\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263" </Label>} {elem <languages> {elem <language> {elem <name> "\346\227\245\346\234\254\350\252\236" </Name>} {elem <type> "Unknown" </Type>} </Language>} </Languages>} {elem <listprice> {elem <amount> "3990" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,990" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\343\203\224\343\202\242\343\202\275\343\203\263\343\202\250\343\203\207\343\203\245\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263" </Manufacturer>} {elem <numberofpages> "340" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "94" </Height>} {elem <length Units="hundredths-inches"> "906" </Length>} {elem <weight Units="hundredths-pounds"> "141" </Weight>} {elem <width Units="hundredths-inches"> "717" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2009-04-24" </PublicationDate>} {elem <publisher> "\343\203\224\343\202\242\343\202\275\343\203\263\343\202\250\343\203\207\343\203\245\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263" </Publisher>} {elem <studio> "\343\203\224\343\202\242\343\202\275\343\203\263\343\202\250\343\203\207\343\203\245\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263" </Studio>} {elem <title> "Ruby\343\201\253\343\202\210\343\202\213\343\203\207\343\202\266\343\202\244\343\203\263\343\203\273\343\203\221\343\202\277\343\203\274\343\203\263" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "3990" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,990" </FormattedPrice>} </LowestNewPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "0" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb69365f0 @element={elem <item> {elem <asin> "4822234304" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/Ruby%E6%8A%80%E8%A1%93%E8%80%85%E8%AA%8D%E5%AE%9A%E8%A9%A6%E9%A8%93-%E5%85%AC%E5%BC%8F%E3%82%AC%E3%82%A4%E3%83%89-ITpro-BOOKs-%E4%BC%8A%E8%97%A4%E5%BF%A0%E3%83%86%E3%82%AF%E3%83%8E%E3%82%BD%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA/dp/4822234304%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4822234304" </DetailPageURL>} {elem <salesrank> "19090" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "112" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL.jpg" </URL>} {elem <height Units="pixels"> "427" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "21" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "112" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41D9PRkspEL.jpg" </URL>} {elem <height Units="pixels"> "427" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "\344\274\212\350\227\244\345\277\240\343\203\206\343\202\257\343\203\216\343\202\275\343\203\252\343\203\245\343\203\274\343\202\267\343\203\247\343\203\263\343\202\272" </Author>} {elem <binding> "\345\215\230\350\241\214\346\234\254\357\274\210\343\202\275\343\203\225\343\203\210\343\202\253\343\203\220\343\203\274\357\274\211" </Binding>} {elem <creator Role="編集"> "ITpro" </Creator>} {elem <creator Role="監修"> "Ruby\343\202\242\343\202\275\343\202\267\343\202\250\343\203\274\343\202\267\343\203\247\343\203\263" </Creator>} {elem <ean> "9784822234300" </EAN>} {elem <edition> "A5" </Edition>} {elem <isbn> "4822234304" </ISBN>} {elem <label> "\346\227\245\347\265\214BP\347\244\276" </Label>} {elem <languages> {elem <language> {elem <name> "\346\227\245\346\234\254\350\252\236" </Name>} {elem <type> "Unknown" </Type>} </Language>} </Languages>} {elem <listprice> {elem <amount> "2100" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,100" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\346\227\245\347\265\214BP\347\244\276" </Manufacturer>} {elem <numberofpages> "256" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "79" </Height>} {elem <length Units="hundredths-inches"> "827" </Length>} {elem <weight Units="hundredths-pounds"> "84" </Weight>} {elem <width Units="hundredths-inches"> "583" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2009-03-25" </PublicationDate>} {elem <publisher> "\346\227\245\347\265\214BP\347\244\276" </Publisher>} {elem <studio> "\346\227\245\347\265\214BP\347\244\276" </Studio>} {elem <title> "Ruby\346\212\200\350\241\223\350\200\205\350\252\215\345\256\232\350\251\246\351\250\223 \345\205\254\345\274\217\343\202\254\343\202\244\343\203\211 (ITpro BOOKs)" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2100" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,100" </FormattedPrice>} </LowestNewPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "0" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb69365dc @element={elem <item> {elem <asin> "4797340045" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/Ruby%E3%83%AC%E3%82%B7%E3%83%94%E3%83%96%E3%83%83%E3%82%AF-%E7%AC%AC2%E7%89%88-268%E3%81%AE%E6%8A%80-%E9%9D%92%E6%9C%A8-%E5%B3%B0%E9%83%8E/dp/4797340045%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4797340045" </DetailPageURL>} {elem <salesrank> "29927" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "113" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "354" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "21" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "113" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41w6qA2x-zL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "354" </Width>} </LargeImage>} </ImageSet>} {elem <imageset Category="variant"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/51r9BOHrkUL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "21" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/51r9BOHrkUL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/51r9BOHrkUL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "113" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/51r9BOHrkUL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "354" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "\351\235\222\346\234\250 \345\263\260\351\203\216" </Author>} {elem <author> "\345\276\214\350\227\244 \350\243\225\350\224\265" </Author>} {elem <author> "\351\253\230\346\251\213 \345\276\201\347\276\251" </Author>} {elem <binding> "\345\215\230\350\241\214\346\234\254" </Binding>} {elem <creator Role="監修"> "\343\201\276\343\201\244\343\202\202\343\201\250\343\202\206\343\201\215\343\201\262\343\202\215" </Creator>} {elem <ean> "9784797340044" </EAN>} {elem <edition> "\347\254\2542\347\211\210" </Edition>} {elem <isbn> "4797340045" </ISBN>} {elem <label> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257 \343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Label>} {elem <listprice> {elem <amount> "2940" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,940" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257 \343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Manufacturer>} {elem <numberofpages> "480" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "126" </Height>} {elem <length Units="hundredths-inches"> "827" </Length>} {elem <weight Units="hundredths-pounds"> "141" </Weight>} {elem <width Units="hundredths-inches"> "614" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2007-02-01" </PublicationDate>} {elem <publisher> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257 \343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Publisher>} {elem <studio> "\343\202\275\343\203\225\343\203\210\343\203\220\343\203\263\343\202\257 \343\202\257\343\203\252\343\202\250\343\202\244\343\203\206\343\202\243\343\203\226" </Studio>} {elem <title> "Ruby\343\203\254\343\202\267\343\203\224\343\203\226\343\203\203\343\202\257 \347\254\2542\347\211\210 268\343\201\256\346\212\200" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2940" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,940" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "2078" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,078" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "4" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb69365c8 @element={elem <item> {elem <asin> "4274066428" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0Ruby-%E7%AC%AC2%E7%89%88-%E8%A8%80%E8%AA%9E%E7%B7%A8-Dave-Thomas/dp/4274066428%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4274066428" </DetailPageURL>} {elem <salesrank> "105313" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "57" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "122" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL.jpg" </URL>} {elem <height Units="pixels"> "394" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "23" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "57" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "122" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/4151YFZ27NL.jpg" </URL>} {elem <height Units="pixels"> "394" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "Dave Thomas" </Author>} {elem <author> "Chad Fowler" </Author>} {elem <author> "Andy Hunt" </Author>} {elem <binding> "\345\244\247\345\236\213\346\234\254" </Binding>} {elem <creator Role="翻訳"> "\347\224\260\345\222\214 \345\213\235" </Creator>} {elem <creator Role="翻訳"> "\343\201\276\343\201\244\343\202\202\343\201\250 \343\202\206\343\201\215\343\201\262\343\202\215" </Creator>} {elem <ean> "9784274066429" </EAN>} {elem <edition> "\347\254\2542\347\211\210" </Edition>} {elem <isbn> "4274066428" </ISBN>} {elem <label> "\343\202\252\343\203\274\343\203\240\347\244\276" </Label>} {elem <listprice> {elem <amount> "3990" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,990" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\343\202\252\343\203\274\343\203\240\347\244\276" </Manufacturer>} {elem <numberofpages> "434" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "110" </Height>} {elem <length Units="hundredths-inches"> "921" </Length>} {elem <weight Units="hundredths-pounds"> "159" </Weight>} {elem <width Units="hundredths-inches"> "724" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2006-08-26" </PublicationDate>} {elem <publisher> "\343\202\252\343\203\274\343\203\240\347\244\276" </Publisher>} {elem <studio> "\343\202\252\343\203\274\343\203\240\347\244\276" </Studio>} {elem <title> "\343\203\227\343\203\255\343\202\260\343\203\251\343\203\237\343\203\263\343\202\260Ruby \347\254\2542\347\211\210 \350\250\200\350\252\236\347\267\250" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "3990" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 3,990" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "2670" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,670" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "14" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb69365b4 @element={elem <item> {elem <asin> "4798019437" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AERuby%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-TECHNICAL-MASTER-%E5%B1%B1%E6%9C%AC-%E5%9B%A3/dp/4798019437%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4798019437" </DetailPageURL>} {elem <salesrank> "36734" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "58" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "124" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "387" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "23" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "58" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "124" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/51XaQh25c5L.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "387" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "\345\261\261\346\234\254 \345\233\243" </Author>} {elem <binding> "\345\215\230\350\241\214\346\234\254" </Binding>} {elem <ean> "9784798019437" </EAN>} {elem <isbn> "4798019437" </ISBN>} {elem <label> "\347\247\200\345\222\214\343\202\267\343\202\271\343\203\206\343\203\240" </Label>} {elem <listprice> {elem <amount> "2520" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,520" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\347\247\200\345\222\214\343\202\267\343\202\271\343\203\206\343\203\240" </Manufacturer>} {elem <numberofpages> "335" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "102" </Height>} {elem <length Units="hundredths-inches"> "929" </Length>} {elem <weight Units="hundredths-pounds"> "159" </Weight>} {elem <width Units="hundredths-inches"> "732" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2008-04" </PublicationDate>} {elem <publisher> "\347\247\200\345\222\214\343\202\267\343\202\271\343\203\206\343\203\240" </Publisher>} {elem <studio> "\347\247\200\345\222\214\343\202\267\343\202\271\343\203\206\343\203\240" </Studio>} {elem <title> "\343\201\257\343\201\230\343\202\201\343\201\246\343\201\256Ruby\343\203\227\343\203\255\343\202\260\343\203\251\343\203\237\343\203\263\343\202\260 (TECHNICAL MASTER)" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2520" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,520" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "1800" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 1,800" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "2" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb69365a0 @element={elem <item> {elem <asin> "4798114723" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/10%E6%97%A5%E3%81%A7%E3%81%8A%E3%81%BC%E3%81%88%E3%82%8B-Ruby-Rails%E5%85%A5%E9%96%80%E6%95%99%E5%AE%A4-arton/dp/4798114723%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4798114723" </DetailPageURL>} {elem <salesrank> "91085" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "59" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "126" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "394" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "24" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "59" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "126" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/51ULhLrQunL.jpg" </URL>} {elem <height Units="pixels"> "500" </Height>} {elem <width Units="pixels"> "394" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "arton" </Author>} {elem <binding> "\345\244\247\345\236\213\346\234\254" </Binding>} {elem <ean> "9784798114729" </EAN>} {elem <isbn> "4798114723" </ISBN>} {elem <label> "\347\277\224\346\263\263\347\244\276" </Label>} {elem <listprice> {elem <amount> "2940" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,940" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\347\277\224\346\263\263\347\244\276" </Manufacturer>} {elem <numberofpages> "424" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "102" </Height>} {elem <length Units="hundredths-inches"> "906" </Length>} {elem <weight Units="hundredths-pounds"> "163" </Weight>} {elem <width Units="hundredths-inches"> "724" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2008-04-15" </PublicationDate>} {elem <publisher> "\347\277\224\346\263\263\347\244\276" </Publisher>} {elem <studio> "\347\277\224\346\263\263\347\244\276" </Studio>} {elem <title> "10\346\227\245\343\201\247\343\201\212\343\201\274\343\201\210\343\202\213 Ruby on Rails\345\205\245\351\226\200\346\225\231\345\256\244" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2940" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,940" </FormattedPrice>} </LowestNewPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "0" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>, #<Amazon::Element:0xb693658c @element={elem <item> {elem <asin> "4839927847" </ASIN>} {elem <detailpageurl> "http://www.amazon.co.jp/Ruby%E3%81%A7%E4%BD%9C%E3%82%8B%E5%A5%87%E5%A6%99%E3%81%AA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E-%7EEsoteric-Language%7E-%E5%8E%9F-%E6%82%A0/dp/4839927847%3FSubscriptionId%3D04KWCPFABBS5S27AKFG2%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D4839927847" </DetailPageURL>} {elem <salesrank> "64542" </SalesRank>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "112" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL.jpg" </URL>} {elem <height Units="pixels"> "427" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} {elem <imagesets> {elem <imageset Category="primary"> {elem <swatchimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL._SL30_.jpg" </URL>} {elem <height Units="pixels"> "30" </Height>} {elem <width Units="pixels"> "21" </Width>} </SwatchImage>} {elem <smallimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL._SL75_.jpg" </URL>} {elem <height Units="pixels"> "75" </Height>} {elem <width Units="pixels"> "53" </Width>} </SmallImage>} {elem <mediumimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL._SL160_.jpg" </URL>} {elem <height Units="pixels"> "160" </Height>} {elem <width Units="pixels"> "112" </Width>} </MediumImage>} {elem <largeimage> {elem <url> "http://ecx.images-amazon.com/images/I/41vb2HHFNJL.jpg" </URL>} {elem <height Units="pixels"> "427" </Height>} {elem <width Units="pixels"> "300" </Width>} </LargeImage>} </ImageSet>} </ImageSets>} {elem <itemattributes> {elem <author> "\345\216\237 \346\202\240" </Author>} {elem <binding> "\345\215\230\350\241\214\346\234\254\357\274\210\343\202\275\343\203\225\343\203\210\343\202\253\343\203\220\343\203\274\357\274\211" </Binding>} {elem <ean> "9784839927844" </EAN>} {elem <isbn> "4839927847" </ISBN>} {elem <label> "\346\257\216\346\227\245\343\202\263\343\203\237\343\203\245\343\203\213\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263\343\202\272" </Label>} {elem <languages> {elem <language> {elem <name> "\346\227\245\346\234\254\350\252\236" </Name>} {elem <type> "Unknown" </Type>} </Language>} </Languages>} {elem <listprice> {elem <amount> "2814" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,814" </FormattedPrice>} </ListPrice>} {elem <manufacturer> "\346\257\216\346\227\245\343\202\263\343\203\237\343\203\245\343\203\213\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263\343\202\272" </Manufacturer>} {elem <numberofpages> "228" </NumberOfPages>} {elem <packagedimensions> {elem <height Units="hundredths-inches"> "87" </Height>} {elem <length Units="hundredths-inches"> "827" </Length>} {elem <weight Units="hundredths-pounds"> "93" </Weight>} {elem <width Units="hundredths-inches"> "591" </Width>} </PackageDimensions>} {elem <productgroup> "Book" </ProductGroup>} {elem <publicationdate> "2008-12-20" </PublicationDate>} {elem <publisher> "\346\257\216\346\227\245\343\202\263\343\203\237\343\203\245\343\203\213\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263\343\202\272" </Publisher>} {elem <studio> "\346\257\216\346\227\245\343\202\263\343\203\237\343\203\245\343\203\213\343\202\261\343\203\274\343\202\267\343\203\247\343\203\263\343\202\272" </Studio>} {elem <title> "Ruby\343\201\247\344\275\234\343\202\213\345\245\207\345\246\231\343\201\252\343\203\227\343\203\255\343\202\260\343\203\251\343\203\237\343\203\263\343\202\260\350\250\200\350\252\236 ~Esoteric Language~" </Title>} </ItemAttributes>} {elem <offersummary> {elem <lowestnewprice> {elem <amount> "2814" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,814" </FormattedPrice>} </LowestNewPrice>} {elem <lowestusedprice> {elem <amount> "2360" </Amount>} {elem <currencycode> "JPY" </CurrencyCode>} {elem <formattedprice> "\357\277\245 2,360" </FormattedPrice>} </LowestUsedPrice>} {elem <totalnew> "1" </TotalNew>} {elem <totalused> "1" </TotalUsed>} {elem <totalcollectible> "0" </TotalCollectible>} {elem <totalrefurbished> "0" </TotalRefurbished>} </OfferSummary>} </Item>}>]):
+  app/controllers/search_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (184.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:25:43) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+
+ActionView::TemplateError (undefined method `title' for #<Amazon::Element:0xb69e0668>) on line #15 of app/views/search/index.rhtml:
+12:       <% @amazon_ec2.search_items.each do |item| -%>
+13:         <tr>			     
+14:           <td>
+15:              <%= item.title %>
+16:           </td>
+17: 	</tr>
+18:       <% end -%>
+
+    app/views/search/index.rhtml:15:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:12:in `each'
+    app/views/search/index.rhtml:12:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:25:59) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+Completed in 1031ms (View: 982, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:27:20) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+
+ActionView::TemplateError (undefined method `asin' for #<Amazon::Element:0xb6a2a100>) on line #18 of app/views/search/index.rhtml:
+15:    </tr>
+16:       <% @amazon_ec2.search_items.each do |item| -%>
+17:         <tr>	
+18: 	  <td><%= item.asin %></td>		     
+19:           <td>
+20:              <%= item.title %>
+21:           </td>
+
+    app/views/search/index.rhtml:18:in `_run_rhtml_app47views47search47index46rhtml'
+    app/views/search/index.rhtml:16:in `each'
+    app/views/search/index.rhtml:16:in `_run_rhtml_app47views47search47index46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:27:57) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+NameError (undefined method `isbn' for class `Amazon::Element'):
+  lib/amazon_ec2.rb:82
+  app/controllers/search_controller.rb:4:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:28:05) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+
+SyntaxError (/home/syou/ruby/rails/simplebook/lib/amazon_ec2.rb:83: syntax error, unexpected $end, expecting kEND):
+  app/controllers/search_controller.rb:4:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (77.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:28:11) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>"Ruby"}
+Rendering search/index
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=Ruby&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+Completed in 1086ms (View: 1037, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-21 21:28:40) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"4873113946", "authenticity_token"=>"HLJQkwSRoZYum2/bXMNL3w7XLHi0WaAmWOHkyXIaCZs=", "sort"=>"titlerank", "keyword"=>""}
+Rendering search/index
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=4873113946&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+Completed in 656ms (View: 636, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-23 19:06:47) [GET]
+Rendering search/index
+Completed in 321ms (View: 317, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-23 19:07:07) [POST]
+  Parameters: {"commit"=>"検索", "isbn"=>"", "authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "sort"=>"inverse-pricerank", "keyword"=>"神様ゲーム"}
+Rendering search/index
+Request URL: http://webservices.amazon.co.jp/onca/xml?Service=AWSECommerceService&Operation=ItemSearch&SearchIndex=Books&Keywords=%E7%A5%9E%E6%A7%98%E3%82%B2%E3%83%BC%E3%83%A0&ResponseGroup=Medium&AWSAccessKeyId=04KWCPFABBS5S27AKFG2
+Completed in 1284ms (View: 1269, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-05-24 14:11:45) [GET]
+Rendering search/index
+Completed in 308ms (View: 304, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing BookController#index (for 127.0.0.1 at 2009-05-24 14:11:50) [GET]
+
+ActionView::MissingTemplate (Missing template book/index.erb in view path app/views):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BookController#new (for 127.0.0.1 at 2009-05-24 14:11:55) [GET]
+Rendering template within layouts/book
+Rendering book/new
+Completed in 88ms (View: 61, DB: 0) | 200 OK [http://localhost/book/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-24 14:13:06) [GET]
+
+ActionController::RoutingError (No route matches "/books/new" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:13:22) [GET]
+Rendering books/new
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:23:58) [GET]
+Rendering books/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:14) [GET]
+Rendering books/new
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:22) [GET]
+Rendering books/new
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:23) [GET]
+Rendering books/new
+Completed in 29ms (View: 3, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:23) [GET]
+Rendering books/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:24) [GET]
+Rendering books/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:24) [GET]
+Rendering books/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:24) [GET]
+Rendering books/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:24) [GET]
+Rendering books/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:24) [GET]
+Rendering books/new
+Completed in 54ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:25) [GET]
+Rendering books/new
+Completed in 9ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:26) [GET]
+Rendering books/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:26) [GET]
+Rendering books/new
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:26) [GET]
+Rendering books/new
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:27) [GET]
+Rendering books/new
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:24:27) [GET]
+Rendering books/new
+Completed in 14ms (View: 2, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:25:07) [GET]
+Rendering books/new
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:25:08) [GET]
+Rendering books/new
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:25:20) [GET]
+Rendering template within layouts/book
+Rendering books/new
+
+ActionView::TemplateError () on line #22 of app/views/layouts/book.rhtml:
+19: </style>
+20: </head>
+21: <body>
+22: <% raise %>
+23:   <%= yield:layout %>
+24: </body>
+25: 
+
+    app/views/layouts/book.rhtml:22:in `_run_rhtml_app47views47layouts47book46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.7ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:25:25) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:30:38) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:31:11) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-24 14:31:19) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/books/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (130.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (102.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBookIndices (20090524073038)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "book_indices" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "genrae" integer, "character" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090524073038')[0m
+Migrating to CreateBooks (20090524073156)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author_id" integer, "authership_id" integer, "volume" integer, "publisher_id" integer, "book_index_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090524073156')[0m
+Migrating to CreateSeries (20090524073217)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "series" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "substitle" varchar(255), "book_id" integer, "author_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090524073217')[0m
+Migrating to CreatePublishers (20090524073227)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "publishers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090524073227')[0m
+Migrating to CreateAuthors (20090524073235)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090524073235')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("authors")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("book_indices")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("books")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("publishers")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("series")[0m
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-31 15:45:27) [GET]
+Rendering template within layouts/book
+Rendering books/new
+ERROR: compiling _run_rhtml_app47views47books47new46rhtml RAISED compile error
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:25: syntax error, unexpected '<', expecting ')'
+<div id="common_author">
+ ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:26: syntax error, unexpected '<'
+  <table>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:29: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:31: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:32: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:34: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:35: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:36: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:38: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:40: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:41: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:43: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:44: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:45: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:47: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:49: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:50: syntax error, unexpected '<'
+  </table>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:51: unknown regexp options - dv
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:52: syntax error, unexpected '<'
+<div id="another_author">
+ ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:54: syntax error, unexpected '<'
+</div>
+ ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: unmatched ): /div>
+<% end ).to_s)
+@output_buffer.concat "<form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">\n  \346\226\260\343\201\227\343\201\217\343\201\250\343\203\274\343\202\215\343\201\217<br /
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected $undefined
+...343\202\215\343\201\217<br />\n\n  <br />\n  \n  \342\226\24...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...5\343\201\217<br />\n\n  <br />\n  \n  \342\226\240\343\202\...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected $undefined
+...343\203\263\343\203\253<br />\n  <input type=\"radio\" name=...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...3\203\253<br />\n  <input type=\"radio\" name=\"kind\" id=\"...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:166: syntax error, unexpected kENSURE, expecting ')'
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:168: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_rhtml_app47views47books47new46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for :book_index do |f| 
+@output_buffer.concat "<p>\346\226\260\350\246\217\347\231\273\351\214\262<br/>\n  \342\226\240\343\202\270\343\203\243\343\203\263\343\203\253(\345\277\205\351\240\210)<br />\n  "
+
+;  BookIndex::GENRES.each do |genre| 
+@output_buffer.concat "  <label>"; @output_buffer.concat(( f.radio_button :genre, genre.id ).to_s); @output_buffer.concat(( genre.jname ).to_s); @output_buffer.concat "</label>\n  "
+;  end 
+@output_buffer.concat "  <table class=\"example1\">\n    <tr>\n      <td>\350\221\227\350\200\205\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251(\343\201\204\343\202\217\343\202\206\343\202\213\346\225\264\347\220\206\347\224\250)</td>\n      <td>\343\201\265\343\202\212\343\201\214\343\201\252\357\274\210\345\277\205\351\240\210\357\274\211</td>      \n    </tr>\n    <tr>\n      <td>\n\t"
+
+
+
+
+
+
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n      </td>\n      <td>"
+
+; @output_buffer.concat(( f.text_field :character ).to_s); @output_buffer.concat "</td>\n    </tr>\n  </table>\n<p>\345\206\205\345\256\271\350\251\263\347\264\260\343\201\256\347\231\273\351\214\262</p>\n<label>< %= radio_buton_tag :series_type %>\350\221\227\350\200\205\343\201\214\347\225\260\343\201\252\343\202\213\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</label>\n<label>"
+
+
+
+
+; @output_buffer.concat(( radio_buton_tag :series_type ).to_s); @output_buffer.concat "\350\221\227\350\200\205\343\201\214\345\220\214\343\201\230\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253<label>\n<p>\345\216\237\344\275\234\350\200\205(\344\273\273\346\204\217)<br />\n  "
+
+; @output_buffer.concat(( text_field_tag :"books[authorship]"
+
+<div id="common_author">
+  <table>
+    <tr>
+      <td>原作者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  <tr>
+  <td>サブタイトル</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+  </tr>
+  <tr>
+  <td>著者（任意）</td>
+  <td><input class="example2" type="text" name="hoge2" id="hoge2" /></td>
+
+  </tr>
+  </table>
+</div>
+<div id="another_author">
+
+</div>
+<% end ).to_s)
+@output_buffer.concat "<form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">\n  \346\226\260\343\201\227\343\201\217\343\201\250\343\203\274\343\202\215\343\201\217<br />\n\n  <br />\n  \n  \342\226\240\343\202\270\343\203\243\343\203\263\343\203\253<br />\n  <input type=\"radio\" name=\"kind\" id=\"kind1\" />\n  <label for=\"kind1\">\343\203\251\343\203\216\343\203\231</label>\n  <input type=\"radio\" name=\"kind\" id=\"kind2\" />\n  <label for=\"kind2\">\343\203\216\343\203\231\343\203\253</label>\n  <input type=\"radio\" name=\"kind\" id=\"kind3\" />\n\n  <label for=\"kind3\">\346\274\253\347\224\273</label>\n\n  <br />\n  <br />\n  \n  <table class=\"example1\">\n    <tr>\n      <td>\350\221\227\350\200\205\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251</td>\n      <td>\343\201\265\343\202\212\343\201\214\343\201\252\357\274\210\344\273\273\346\204\217\357\274\211</td>      \n    </tr>\n    <tr>\n      <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n      <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n    </tr>\n  </table>\n  <input type=\"radio\" name=\"series\" id=\"series1\" />\n  <label for=\"series1\">\343\202\267\343\203\252\343\203\274\343\202\272\343\201\256\345\240\264\345\220\210\343\201\257\343\203\201\343\202\247\343\203\203\343\202\257</label>\n\n  \n  <br />\n  <br />\n  \n  <div class=\"example1\">\n  \342\206\221\343\202\222\343\203\201\343\202\247\343\203\203\343\202\257\343\201\227\343\201\237\345\240\264\345\220\210\350\241\250\347\244\272<br />\n  <table>\n  <tr>\n  <td>\345\216\237\344\275\234\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  <tr>\n  <td>\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n  </tr>\n  <tr>\n  <td>\350\221\227\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  <tr>\n  <td>\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n  </tr>\n  <tr>\n  <td>\350\221\227\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  </table>\n\n\n\n\n  <input class=\"example3\" type=\"submit\" value=\"\343\203\206\343\202\255\343\202\271\343\203\210\343\203\234\343\203\203\343\202\257\343\202\271\350\277\275\345\212\240\" name=\"hoge2\" id=\"hoge2\" /><br />\n  </div>\n    \n  <br />\n  <br />\n  \n  <input type=\"radio\" name=\"series\" id=\"series2\" />\n\n    <label for=\"series2\">\343\202\267\343\203\252\343\203\274\343\202\272\343\201\256\345\240\264\345\220\210\343\201\257\343\203\201\343\202\247\343\203\203\343\202\257</label><br />\n  \342\226\241\343\202\277\343\202\244\343\203\210\343\203\253\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251<br />\n  <input class=\"example2\" type=\"text\" name=\"hoge1\" id=\"hoge1\" /><br />\n  \342\226\240\345\207\272\347\211\210\347\244\276<br />\n  <input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" />\n  \n  <br />\n  <br />\n\n  \n  <div class=\"example1\">\n  \342\206\221\343\202\222\343\203\201\343\202\247\343\203\203\343\202\257\343\201\227\343\201\237\345\240\264\345\220\210\350\241\250\347\244\272<br />\n  \343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253<input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /><br />\n  \343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253<input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /><br />\n  <input class=\"example3\" type=\"submit\" value=\"\343\203\206\343\202\255\343\202\271\343\203\210\343\203\234\343\203\203\343\202\257\343\202\271\350\277\275\345\212\240\" name=\"hoge2\" id=\"hoge2\" /><br />\n  </div>\n  \n  <br />\n\n  <br />\n  \n  \342\226\240\345\267\273\346\225\260\n  <input class=\"example2\" type=\"text\" name=\"hoge1\" id=\"hoge1\" class=\"example1\" /><br />\n  <br />\n  \n  <input type=\"checkbox\" name=\"hoge3\" id=\"hoge3\" />\n  \345\256\214\347\265\220  \357\274\210\344\273\273\346\204\217\357\274\211\n  \n  <br />\n  <br />\n\n  <input class=\"example3\" type=\"submit\" value=\"\343\201\223\343\202\214\343\201\247\343\201\212\357\275\213\" name=\"hoge2\" id=\"hoge2\" />\n\n  <input class=\"example3\" type=\"submit\" value=\"\343\201\276\343\201\240\345\205\245\345\212\233\343\201\231\343\202\213\357\274\237\" name=\"hoge2\" id=\"hoge2\" /><br />\n\n</form>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:168:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:25: syntax error, unexpected '<', expecting ')'
+<div id="common_author">
+ ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:26: syntax error, unexpected '<'
+  <table>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:29: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:31: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:32: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:34: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:35: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:36: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:38: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:40: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:41: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:43: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:44: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:45: syntax error, unexpected '<'
+  <tr>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:47: syntax error, unexpected '<'
+...t" name="hoge2" id="hoge2" /></td>
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:49: unknown regexp options - tr
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:50: syntax error, unexpected '<'
+  </table>
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:51: unknown regexp options - dv
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:52: syntax error, unexpected '<'
+<div id="another_author">
+ ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:54: syntax error, unexpected '<'
+</div>
+ ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: unmatched ): /div>
+<% end ).to_s)
+@output_buffer.concat "<form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">\n  \346\226\260\343\201\227\343\201\217\343\201\250\343\203\274\343\202\215\343\201\217<br /
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected $undefined
+...343\202\215\343\201\217<br />\n\n  <br />\n  \n  \342\226\24...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected tREGEXP_BEG, expecting kDO or '{' or '('
+...5\343\201\217<br />\n\n  <br />\n  \n  \342\226\240\343\202\...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected $undefined
+...343\203\263\343\203\253<br />\n  <input type=\"radio\" name=...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:56: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...3\203\253<br />\n  <input type=\"radio\" name=\"kind\" id=\"...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:166: syntax error, unexpected kENSURE, expecting ')'
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:168: syntax error, unexpected kEND, expecting ')') on line #25 of app/views/books/new.rhtml:
+22: <p>原作者(任意)<br />
+23:   <%= text_field_tag :"books[authorship]"
+24: 
+25: <div id="common_author">
+26:   <table>
+27:     <tr>
+28:       <td>原作者（任意）</td>
+
+    app/views/books/new.rhtml:168:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.8ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-31 15:46:12) [GET]
+Rendering template within layouts/book
+Rendering books/new
+
+ActionView::TemplateError (undefined method `radio_buton_tag' for #<ActionView::Base:0xb79265b4>) on line #21 of app/views/books/new.rhtml:
+18:   </table>
+19: <p>内容詳細の登録</p>
+20: <label>< %= radio_buton_tag :series_type %>著者が異なるサブタイトル</label>
+21: <label><%= radio_buton_tag :series_type %>著者が同じサブタイトル<label>
+22: <p>原作者(任意)<br />
+23:   <%= text_field_tag :"books[authorship]" %>
+24: 
+
+    app/views/books/new.rhtml:21:in `_run_rhtml_app47views47books47new46rhtml'
+    app/views/books/new.rhtml:1:in `_run_rhtml_app47views47books47new46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (89.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-31 15:46:28) [GET]
+Rendering template within layouts/book
+Rendering books/new
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #20 of app/views/books/new.rhtml:
+17:     </tr>
+18:   </table>
+19: <p>内容詳細の登録</p>
+20: <label><%= radio_button_tag :series_type %>著者が異なるサブタイトル</label>
+21: <label><%= radio_button_tag :series_type %>著者が同じサブタイトル<label>
+22: <p>原作者(任意)<br />
+23:   <%= text_field_tag :"books[authorship]" %>
+
+    app/views/books/new.rhtml:20:in `radio_button_tag'
+    app/views/books/new.rhtml:20:in `_run_rhtml_app47views47books47new46rhtml'
+    app/views/books/new.rhtml:1:in `_run_rhtml_app47views47books47new46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (208.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-05-31 15:46:43) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 45ms (View: 40, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing SearchController#index (for 127.0.0.1 at 2009-06-01 12:39:57) [GET]
+Rendering search/index
+Completed in 369ms (View: 365, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-01 12:40:06) [GET]
+Rendering template within layouts/book
+Rendering books/new
+ERROR: compiling _run_rhtml_app47views47books47new46rhtml RAISED compile error
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected '<', expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+                                          ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+                                                     ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected '>'
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:31: syntax error, unexpected $undefined, expecting ')'
+...53<label>\n</p>\n\n\n<div id=\"common_author\">\n  <table>\n...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:65: syntax error, unexpected kEND, expecting ')'
+;  end 
+      ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:176: syntax error, unexpected kENSURE, expecting ')'
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:178: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_rhtml_app47views47books47new46rhtml(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for :book_index do |f| 
+@output_buffer.concat "<p>\346\226\260\350\246\217\347\231\273\351\214\262<br/>\n  \342\226\240\343\202\270\343\203\243\343\203\263\343\203\253(\345\277\205\351\240\210)<br />\n  "
+
+;  BookIndex::GENRES.each do |genre| 
+@output_buffer.concat "  <label>"; @output_buffer.concat(( f.radio_button :genre, genre.id ).to_s); @output_buffer.concat(( genre.jname ).to_s); @output_buffer.concat "</label>\n  "
+;  end 
+@output_buffer.concat "  <table class=\"example1\">\n    <tr>\n      <td>\350\221\227\350\200\205\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251(\343\201\204\343\202\217\343\202\206\343\202\213\346\225\264\347\220\206\347\224\250)</td>\n      <td>\343\201\265\343\202\212\343\201\214\343\201\252\357\274\210\345\277\205\351\240\210\357\274\211</td>      \n    </tr>\n    <tr>\n      <td>\n\t"
+
+
+
+
+
+
+; @output_buffer.concat(( f.text_field :name ).to_s); @output_buffer.concat "\n      </td>\n      <td>"
+
+; @output_buffer.concat(( f.text_field :character ).to_s); @output_buffer.concat "</td>\n    </tr>\n  </table>\n<p>\345\206\205\345\256\271\350\251\263\347\264\260\343\201\256\347\231\273\351\214\262</p>\n<p>\345\216\237\344\275\234\350\200\205(\344\273\273\346\204\217)<br />\n  "
+
+
+
+
+; @output_buffer.concat(( text_field_tag :"books[authorship]" ).to_s); @output_buffer.concat "</p>\n<p>\n  \342\226\241\343\202\277\343\202\244\343\203\210\343\203\253\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251<br />\n  "
+
+
+; @output_buffer.concat(( text_field_tag :"books[title]" ).to_s); @output_buffer.concat "<br />\n  \342\226\240\345\207\272\347\211\210\347\244\276<br />\n  "
+
+; @output_buffer.concat(( text_field_tag :"books[publisher]"
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+
+<p>
+<label><%= radio_button_tag :series_type, true ).to_s); @output_buffer.concat "\350\221\227\350\200\205\343\201\214\347\225\260\343\201\252\343\202\213\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</label>\n<label>"
+; @output_buffer.concat(( radio_button_tag :series_type, true ).to_s); @output_buffer.concat "\350\221\227\350\200\205\343\201\214\345\220\214\343\201\230\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253<label>\n</p>\n\n\n<div id=\"common_author\">\n  <table>\n    <tr>\n      <td>\345\216\237\344\275\234\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  <tr>\n  <td>\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n  </tr>\n  <tr>\n  <td>\350\221\227\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  <tr>\n  <td>\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n  </tr>\n  <tr>\n  <td>\350\221\227\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  </table>\n</div>\n<div id=\"another_author\">\n\n</div>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  end 
+@output_buffer.concat "<form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">\n  \346\226\260\343\201\227\343\201\217\343\201\250\343\203\274\343\202\215\343\201\217<br />\n\n  <br />\n  \n  \342\226\240\343\202\270\343\203\243\343\203\263\343\203\253<br />\n  <input type=\"radio\" name=\"kind\" id=\"kind1\" />\n  <label for=\"kind1\">\343\203\251\343\203\216\343\203\231</label>\n  <input type=\"radio\" name=\"kind\" id=\"kind2\" />\n  <label for=\"kind2\">\343\203\216\343\203\231\343\203\253</label>\n  <input type=\"radio\" name=\"kind\" id=\"kind3\" />\n\n  <label for=\"kind3\">\346\274\253\347\224\273</label>\n\n  <br />\n  <br />\n  \n  <table class=\"example1\">\n    <tr>\n      <td>\350\221\227\350\200\205\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251</td>\n      <td>\343\201\265\343\202\212\343\201\214\343\201\252\357\274\210\344\273\273\346\204\217\357\274\211</td>      \n    </tr>\n    <tr>\n      <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n      <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n    </tr>\n  </table>\n  <input type=\"radio\" name=\"series\" id=\"series1\" />\n  <label for=\"series1\">\343\202\267\343\203\252\343\203\274\343\202\272\343\201\256\345\240\264\345\220\210\343\201\257\343\203\201\343\202\247\343\203\203\343\202\257</label>\n\n  \n  <br />\n  <br />\n  \n  <div class=\"example1\">\n  \342\206\221\343\202\222\343\203\201\343\202\247\343\203\203\343\202\257\343\201\227\343\201\237\345\240\264\345\220\210\350\241\250\347\244\272<br />\n  <table>\n  <tr>\n  <td>\345\216\237\344\275\234\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  <tr>\n  <td>\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n  </tr>\n  <tr>\n  <td>\350\221\227\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  <tr>\n  <td>\343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n  </tr>\n  <tr>\n  <td>\350\221\227\350\200\205\357\274\210\344\273\273\346\204\217\357\274\211</td>\n  <td><input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /></td>\n\n  </tr>\n  </table>\n\n\n\n\n  <input class=\"example3\" type=\"submit\" value=\"\343\203\206\343\202\255\343\202\271\343\203\210\343\203\234\343\203\203\343\202\257\343\202\271\350\277\275\345\212\240\" name=\"hoge2\" id=\"hoge2\" /><br />\n  </div>\n    \n  <br />\n  <br />\n  \n  <input type=\"radio\" name=\"series\" id=\"series2\" />\n\n    <label for=\"series2\">\343\202\267\343\203\252\343\203\274\343\202\272\343\201\256\345\240\264\345\220\210\343\201\257\343\203\201\343\202\247\343\203\203\343\202\257</label><br />\n  \342\226\241\343\202\277\343\202\244\343\203\210\343\203\253\345\217\210\343\201\257\343\202\267\343\203\252\343\203\274\343\202\272\347\211\251<br />\n  <input class=\"example2\" type=\"text\" name=\"hoge1\" id=\"hoge1\" /><br />\n  \342\226\240\345\207\272\347\211\210\347\244\276<br />\n  <input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" />\n  \n  <br />\n  <br />\n\n  \n  <div class=\"example1\">\n  \342\206\221\343\202\222\343\203\201\343\202\247\343\203\203\343\202\257\343\201\227\343\201\237\345\240\264\345\220\210\350\241\250\347\244\272<br />\n  \343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253<input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /><br />\n  \343\202\265\343\203\226\343\202\277\343\202\244\343\203\210\343\203\253<input class=\"example2\" type=\"text\" name=\"hoge2\" id=\"hoge2\" /><br />\n  <input class=\"example3\" type=\"submit\" value=\"\343\203\206\343\202\255\343\202\271\343\203\210\343\203\234\343\203\203\343\202\257\343\202\271\350\277\275\345\212\240\" name=\"hoge2\" id=\"hoge2\" /><br />\n  </div>\n  \n  <br />\n\n  <br />\n  \n  \342\226\240\345\267\273\346\225\260\n  <input class=\"example2\" type=\"text\" name=\"hoge1\" id=\"hoge1\" class=\"example1\" /><br />\n  <br />\n  \n  <input type=\"checkbox\" name=\"hoge3\" id=\"hoge3\" />\n  \345\256\214\347\265\220  \357\274\210\344\273\273\346\204\217\357\274\211\n  \n  <br />\n  <br />\n\n  <input class=\"example3\" type=\"submit\" value=\"\343\201\223\343\202\214\343\201\247\343\201\212\357\275\213\" name=\"hoge2\" id=\"hoge2\" />\n\n  <input class=\"example3\" type=\"submit\" value=\"\343\201\276\343\201\240\345\205\245\345\212\233\343\201\231\343\202\213\357\274\237\" name=\"hoge2\" id=\"hoge2\" /><br />\n\n</form>\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:178:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected '<', expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+   ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+                                          ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <input class="example2" type="text" name="hoge2" id="hoge2" />
+                                                     ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:27: syntax error, unexpected '>'
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:31: syntax error, unexpected $undefined, expecting ')'
+...53<label>\n</p>\n\n\n<div id=\"common_author\">\n  <table>\n...
+                              ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:65: syntax error, unexpected kEND, expecting ')'
+;  end 
+      ^
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:176: syntax error, unexpected kENSURE, expecting ')'
+/home/syou/ruby/rails/simplebook/app/views/books/new.rhtml:178: syntax error, unexpected kEND, expecting ')') on line #27 of app/views/books/new.rhtml:
+24:   <%= text_field_tag :"books[title]" %><br />
+25:   ■出版社<br />
+26:   <%= text_field_tag :"books[publisher]"
+27:   <input class="example2" type="text" name="hoge2" id="hoge2" />
+28: 
+29: <p>
+30: <label><%= radio_button_tag :series_type, true %>著者が異なるサブタイトル</label>
+
+    app/views/books/new.rhtml:178:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (84.3ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-01 12:40:39) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 68ms (View: 53, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-01 12:41:54) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 168ms (View: 154, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-03 23:25:40) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 118ms (View: 58, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-03 23:43:10) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 35ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-03 23:43:26) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 35ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-03 23:50:00) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 39ms (View: 25, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-03 23:55:57) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 44ms (View: 29, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-03 23:58:10) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 35ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:01:28) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 33ms (View: 19, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:06:22) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 41ms (View: 28, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:10:13) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 43ms (View: 22, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:10:26) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 227ms (View: 13, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:10:26) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 26ms (View: 10, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:11:10) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 61ms (View: 25, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:11:10) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 24ms (View: 11, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:13:45) [GET]
+Rendering template within layouts/book
+Rendering books/new
+
+ActionView::TemplateError (No expansion found for :prototype) on line #8 of app/views/layouts/book.rhtml:
+5: <meta http-equiv="Content-Style-Type" content="text/css">
+6: 
+7: <title>よおおしいいいいだああああ</title>
+8: <%= javascript_include_tag :prototype %>
+9: <style type="text/css">
+10: body {background-color:#FFFFFF;}
+11: input.example1 { width: 50px; }
+
+    app/views/layouts/book.rhtml:8:in `_run_rhtml_app47views47layouts47book46rhtml'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.6ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:14:31) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 54ms (View: 40, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:14:46) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 33ms (View: 20, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:17:04) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 33ms (View: 20, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:17:17) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 44ms (View: 22, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:18:37) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 42ms (View: 29, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:18:59) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 35ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:19:04) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 128ms (View: 114, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:19:12) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 43ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:19:27) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 36ms (View: 22, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:20:04) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 34ms (View: 20, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 00:21:47) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 131ms (View: 115, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:28:01) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 47ms (View: 24, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:28:11) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 36ms (View: 22, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:33:28) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 42ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:37:42) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 161ms (View: 143, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:38:00) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 45ms (View: 23, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:38:11) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:38:16) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 43ms (View: 29, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:38:25) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 175ms (View: 141, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:38:26) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 59ms (View: 31, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:42:26) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 35ms (View: 22, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:43:05) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 36ms (View: 21, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:51:14) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 151ms (View: 124, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:51:42) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 52ms (View: 37, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:52:46) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 44ms (View: 30, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:55:07) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 35ms (View: 22, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 01:55:52) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 143ms (View: 122, DB: 0) | 200 OK [http://localhost/books/new]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAuthors (20090524073235)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mDROP TABLE "authors"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090524073235'[0m
+Migrating to CreatePublishers (20090524073227)
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "publishers"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090524073227'[0m
+Migrating to CreateSeries (20090524073217)
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "series"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090524073217'[0m
+Migrating to CreateBooks (20090524073156)
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "books"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090524073156'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("book_indices")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBookIndices (20090524073038)
+Migrating to CreateBooks (20090524073156)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author_id" integer, "authership_id" integer, "volume" integer, "publisher_id" integer, "book_index_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090524073156')[0m
+Migrating to CreatePublishers (20090524073227)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "publishers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090524073227')[0m
+Migrating to CreateAuthors (20090524073235)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "authors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090524073235')[0m
+Migrating to CreateVolumes (20090603174033)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "volumes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "subtitle" varchar(255), "book_id" integer, "author_id" integer, "no" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603174033')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("authors")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("book_indices")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("books")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("publishers")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("volumes")[0m
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 02:56:30) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 76ms (View: 25, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 02:57:16) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 57ms (View: 24, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:20:12) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 50ms (View: 25, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:20:25) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 53ms (View: 27, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:21:30) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 66ms (View: 27, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:21:37) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+
+ActionView::MissingTemplate (Missing template books/insert_volume.erb in view path app/views):
+  app/controllers/books_controller.rb:12:in `insert_volume'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:26:01) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 61ms (View: 34, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:26:03) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+
+ActionView::MissingTemplate (Missing template books/insert_volume.erb in view path app/views):
+  app/controllers/books_controller.rb:12:in `insert_volume'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:26:53) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 38ms (View: 13, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:26:54) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+
+NameError (undefined local variable or method `volume' for #<ActionView::Base:0xb68af500>):
+  compiled-template:2:in `_run_inline_622513840'
+  app/controllers/books_controller.rb:12:in `insert_volume'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (198.7ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:27:21) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 41ms (View: 14, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:27:22) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 17ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:31:17) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 61ms (View: 26, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:31:22) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:32:31) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"7"}
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:33:03) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 189ms (View: 31, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:33:06) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 9ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:33:44) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 53ms (View: 26, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:33:47) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:34:15) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 48ms (View: 24, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:34:17) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:36:23) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 64ms (View: 26, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:36:24) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:36:25) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"7"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:36:26) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"8"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:36:28) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"9"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:36:46) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 49ms (View: 26, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:36:49) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#new (for 127.0.0.1 at 2009-06-04 04:37:20) [GET]
+Rendering template within layouts/book
+Rendering books/new
+Completed in 62ms (View: 26, DB: 0) | 200 OK [http://localhost/books/new]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:37:22) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"6"}
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/books/insert_volume]
+
+
+Processing BooksController#insert_volume (for 127.0.0.1 at 2009-06-04 04:37:23) [POST]
+  Parameters: {"authenticity_token"=>"hmpDJcTqbJxCwuGxqsDLdCVqI42COl9E7MMBsno2SSk=", "count"=>"7"}
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/books/insert_volume]
